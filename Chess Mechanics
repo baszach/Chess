@@ -1,1 +1,5 @@
+Moves for Knight (x is current Tile)
+x - 17; x - 15; x - 10; x - 6; x + 6; x + 10; x + 15; x + 17;
+example: if x = 35, then Knight can move to 18, 20, 25, 29, 41, 45, 50, 52
 
+...
