@@ -1,7 +1,14 @@
 Things to know:
-  - protected in class, method, variable and attributes
+  - protected in method, variable and attributes (class cannot be protected)
+      -> protected methodes and variables can only be accessed by Class, Packages and Subclasses(doesn't matter if same/different package)
   - final in class, method, variable and attributes
-  - static in class, method
+      -> final variable/ attribute: to create a constant (invariant value)
+      -> final method: cannot be overridden by subclasses
+      -> final classes: cannot be inherited
+  - static in class, method, variable
+      -> static variable: static variable are commonly shared across all instances of a class
+      -> static methods: methods that are useful even without interaction with Object (https://stackoverflow.com/questions/2671496/java-when-to-use-static-methods)
+      -> static classes: 
   - Map, HashMap Class (from java.util.Map & java.util.HashMap)
   - List Class (from java.util.List)
   - what is Enum ?  
