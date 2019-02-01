@@ -15,3 +15,7 @@ no modifier │ + │ + │    +     │          │   │
 private     │ + │   │          │          │   │
 
  + : accessible         blank : not accessible
+ 
+ 
+ 
+-> a class cannot be declared as protected
