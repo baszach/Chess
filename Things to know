@@ -11,5 +11,5 @@ Things to know:
       -> static classes: cannot be inherited, cannot inherit(except from Object class) / can only contain static constructor, not instance constructor
 - Map, HashMap Class (from java.util.Map & java.util.HashMap)
 - List Class (from java.util.List)
-- what is Enum ?  
+- what is Enum ?  what is a Set ?
 - concept of Immutability in Java (with objects etc.)
