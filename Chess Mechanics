@@ -1,8 +1,12 @@
-Moves for Knight (x is current Tile)
+KNIGHT (Moves with x is current Tile)
 x - 17; x - 15; x - 10; x - 6; x + 6; x + 10; x + 15; x + 17;
-example: if x = 35, then Knight can move to 18, 20, 25, 29, 41, 45, 50, 52
+example: if x = 35, then Knight can move to: 18, 20, 25, 29, 41, 45, 50, 52
 furthermore: build in exclusion handling for columns 1,2,7,8 so the Knight can't make illegal moves
              -> the exclusion with lines cannot appear, because the Pieces cannot move to < 0 or > 63 !
              
-             
+BISHOP (Moves with x is current Tile and s is number of Tiles moves)
+x - 9*s; x - 7*s; x + 7*s; x + 7*s; x + 9*s;
+example: if x = 42, then Bishop can move to:  7, 14, 21, 24, 28, 33, 35, 49, 51, 56, 60
+furthermore:
+
 ...
