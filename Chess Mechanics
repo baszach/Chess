@@ -1,13 +1,25 @@
-KNIGHT (Moves with x is current Tile)
+KNIGHT (Moves: with x being currentTileCoordinate)
 x - 17; x - 15; x - 10; x - 6; x + 6; x + 10; x + 15; x + 17;
 example: if x = 35, then Knight can move to: 18, 20, 25, 29, 41, 45, 50, 52
-furthermore: build in exclusion handling for columns 1,2,7,8 so the Knight can't make illegal moves
+furthermore: build in exclusion handling for rules in following columns: 1,2,7,8 -> so the Knight can't make illegal moves
              -> the exclusion with lines cannot appear, because the Pieces cannot move to x < 0 or x > 63 !
              
-BISHOP (Moves with x is current Tile and s is number of Tiles moves)
+BISHOP (Moves: with x being currentTileCoordinate and s being number of Tile moves)
 x - 9*s; x - 7*s; x + 7*s; x + 7*s; x + 9*s;
 example: if x = 42, then Bishop can move to:  7, 14, 21, 24, 28, 33, 35, 49, 51, 56, 60
-furthermore: build in exclusion handling for columns 1,8 so the Bishop can't make illegal moves
+furthermore: build in exclusion handling for rules in following columns: 1,8 -> so the Bishop can't make illegal moves
+             -> exclusion with lines cannot appear (look Knight explanation ^)
+             
+ROOK (Moves: with x being currentTileCoordinate and s being number of Tile moves)
+x - 8*s; x - 1*s; x + 1*s; x + 8*s;
+example: if x = 11, then Rook can move to: 3, 8, 9, 10, 12, 13, 14, 15, 19, 27, 35, 43, 51, 59
+furthermore: build in exclusion handling for rules in following columns: 1,8 -> so the Rook can't make illegal moves
+             -> exclusion with lines cannot appear (look Knight explanation ^)
+             
+QUEEN (Moves: with x being currentTileCoordinate and s being number of Tile moves)
+x - 9*s; x - 8*s; x - 7*s;  x - 1*s;  x + 1*s; x + 7*s; x + 7*s; x + 8*s; x + 9*s;
+example: (not given yet)
+furthermore: build in exclusion handling for rules in following columns: 1,8 -> so the Queen can't make illegal moves
              -> exclusion with lines cannot appear (look Knight explanation ^)
 
 ...
