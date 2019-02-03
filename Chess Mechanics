@@ -22,4 +22,8 @@ example: (not given yet)
 furthermore: build in exclusion handling for rules in following columns: 1,8 -> so the Queen can't make illegal moves
              -> exclusion with lines cannot appear (look Knight explanation ^)
 
+PAWN (Moves: with x being currentTileCoordinate)
+
+
+
 ...
